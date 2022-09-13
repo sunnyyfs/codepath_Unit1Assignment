@@ -19,6 +19,6 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/73403466/189800713-3ea7b70c-2b05-479d-ba6c-ec478429f956.gif)
 
 ### Notes
-- Encountered error: *[<UIViewController 0x7ff66ec0ef30> setValue:forUndefinedKey:]*
-- Encountered error: *remote: Repository not found.* because the git repo was initialized locally so no remote git repository were identified to the terminal
+- Encountered error: ***[<UIViewController 0x7ff66ec0ef30> setValue:forUndefinedKey:]***
+- Encountered error: ****remote: Repository not found.*** because the git repo was initialized locally so no remote git repository were identified to the terminal
   - Fix: ```git remote set-url origin https://github.com/username/reponame```
