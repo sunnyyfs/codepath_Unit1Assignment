@@ -27,7 +27,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
    Fix: Movie grid cell too big
 4. Github local branch not updated with the remote branch -> unable to push to main\
   ***Git refusing to merge unrelated histories on rebase***\
-  Fix: git pull origin main --allow-unrelated-histories
+  Fix: ```git pull origin main --allow-unrelated-histories```
 ## Flix Part 1
 
 ### User Stories
