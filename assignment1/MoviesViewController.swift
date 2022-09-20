@@ -80,6 +80,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
+    // prepare the mext screen
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
+        // fimd the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)
+        let movie = movies[indexPath!.row]
+        // pass the slected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        // clean up after selection, highlights the selection, goes to the detail page, when back to the main page the selection is no longer highlighted
+        tableView.deselectRow(at: indexPath!, animated: true)
+    }
+    
 
 }
 
